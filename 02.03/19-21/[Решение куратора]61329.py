@@ -13,12 +13,12 @@ def game(a, b):
 
 for s in range(1, 32):
     # 19
-    if game(8 + 1, s) == 1 or game(8, s + 1) == 1 or game(8 * 2, s) == 1 or game(8, s * 2) == 1:
-        print(s)
+    # if game(8 + 1, s) == 1 or game(8, s + 1) == 1 or game(8 * 2, s) == 1 or game(8, s * 2) == 1:
+    #     print(s)
 
     # 20
-    # if game(8, s) == 2:
-    #     print(s)
+    if game(8, s) == -1:
+        print(s)
 
     # 21
     # if game(8, s) == -2:
