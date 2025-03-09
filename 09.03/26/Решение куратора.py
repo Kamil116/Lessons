@@ -14,8 +14,8 @@ while queue:
         last = start + dur
     else:
         end = min_free_time + dur + 3
-        if min_free_time + dur - 1 < 480:
+        if min_free_time + dur <= 480:
             with_delay += 1
-        printers[printers.index(min_free_time)] = end
+            printers[printers.index(min_free_time)] = end
 print(with_delay, last)
 # 791 75
