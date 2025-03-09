@@ -23,6 +23,7 @@ s = f.readline()
 from re import finditer
 
 # (пол. число или 0) -* (пол. число или 0)
+# 12 - 34 - 56 * 78 - 90
 number = '([1-9][0-9]*|0)'
 pattern = f'{number}([-*]{number})*'
 
@@ -30,4 +31,5 @@ max_len = 0
 for match in finditer(pattern, s):
     if len(match.group()) > max_len:
         max_len = len(match.group())
+        print(match.group())
 print(max_len)
