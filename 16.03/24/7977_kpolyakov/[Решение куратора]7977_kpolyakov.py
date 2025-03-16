@@ -16,7 +16,7 @@ def my_eval(string):
     return my_string
 
 
-f = open('24-314.txt')
+f = open('../files/24-314.txt')
 s = f.readline()
 
 num = '(?:[1-5][0-5]*|0)'

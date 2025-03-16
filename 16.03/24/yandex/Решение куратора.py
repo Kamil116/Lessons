@@ -1,7 +1,7 @@
 # Ссылка на задачу:
 # https://education.yandex.ru/ege/task/14f0894b-7da9-48ac-b096-d94b9066c0d8
 
-f = open('24.txt')
+f = open('../files/24.txt')
 s = f.readline()
 s = s.replace('878', '*')
 s = s.split('78')

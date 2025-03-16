@@ -1,6 +1,6 @@
 from re import findall
 
-f = open('files/Задание_24__f6wk__swpe.txt')
+f = open('../files/Задание_24__f6wk__swpe.txt')
 s = f.readline()
 
 # 11199988766... не 3, 5

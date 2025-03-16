@@ -1,6 +1,6 @@
 from re import findall
 
-f = open('files/24__13oe8.txt')
+f = open('../files/24__13oe8.txt')
 s = f.readline()
 
 # AEEEAAAYY

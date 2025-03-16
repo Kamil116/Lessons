@@ -1,6 +1,6 @@
 from re import *
 
-f = open('24-314.txt')
+f = open('../files/24-314.txt')
 s = f.readline()
 
 # неотр. число *+ число *+ число ...

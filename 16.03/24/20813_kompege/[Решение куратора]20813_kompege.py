@@ -1,6 +1,6 @@
 from re import findall
 
-f = open('24_20813.txt')
+f = open('../files/24_20813.txt')
 s = f.readline()
 
 # неотр. число * неотр. число * неотр. число ....

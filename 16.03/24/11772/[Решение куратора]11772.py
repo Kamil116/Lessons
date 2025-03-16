@@ -1,6 +1,6 @@
 from re import *
 
-f = open('files/Задача_8__uhdr.txt')
+f = open('../files/Задача_8__uhdr.txt')
 s = f.readline()
 # M, MVM, MVMVM, ...
 pattern = 'M(?:VM)*|M(?:DM)*'

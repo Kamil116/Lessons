@@ -1,6 +1,6 @@
 from re import findall
 
-f = open('24_19970.txt')
+f = open('../files/24_19970.txt')
 s = f.readline()
 
 # число, кратное 5 * число, кратное 5 * ...

@@ -1,6 +1,6 @@
 from re import *
 
-f = open('files/Задача_7__uhdq.txt')
+f = open('../files/Задача_7__uhdq.txt')
 s = f.readline()
 # M, MM, MMM, ...
 pattern = 'M*'

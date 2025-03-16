@@ -1,6 +1,6 @@
 from re import findall
 
-f = open('files/Задание_24__gmt4__rjfi.txt')
+f = open('../files/Задание_24__gmt4__rjfi.txt')
 s = f.readline()
 
 # pattern = '[BCDF]*' # первый вариант
