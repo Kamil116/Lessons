@@ -1,4 +1,4 @@
-# Подходит только для файла А
+# для файла А
 from math import dist
 
 f = open('27-79a.txt')
@@ -23,3 +23,4 @@ for cluster in clusters:
             mn = max(mn, dist(first_star, second_star))
     diameters.append(mn)
 print(int(min(diameters) * 100_000), int(sum(diameters) / len(diameters) * 100_000))
+print(17 ** 6)
