@@ -36,7 +36,7 @@ for star in f.readlines():
         clusters[0].append([x, y])
     elif y < -x + 10 and x > 2:
         clusters[1].append([x, y])
-    elif y > -x + 10 and y > 4 and x > 4.5 and y < 7:
+    elif -x + 10 < y and y > 4 and x > 4.5 and y < 7:
         clusters[2].append([x, y])
 
 sx = sy = 0
