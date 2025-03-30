@@ -14,6 +14,7 @@ def dbscan(cur_star, r, all_stars, cluster):
     return cluster
 
 
+# # Решение для файла А
 # f = open('27-p00a.txt')
 # clusters = []
 # stars = [list(map(float, line.replace(',', '.').split())) for line in f.readlines()]

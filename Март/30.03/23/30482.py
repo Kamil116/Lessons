@@ -1,12 +1,14 @@
-def func(cur, moves_count):
-    if moves_count == 8:
+results = set()
+
+
+def f(cur, moves_cnt):
+    if moves_cnt == 8:
         results.add(cur)
         return
-    func(cur + 1, moves_count + 1)
-    func(cur * 2, moves_count + 1)
-    func(cur + 4, moves_count + 1)
+    f(cur + 1, moves_cnt + 1)
+    f(cur * 2, moves_cnt + 1)
+    f(cur + 4, moves_cnt + 1)
 
 
-results = set()
-func(2, 0)
+f(2, 0)
 print(len(results))
