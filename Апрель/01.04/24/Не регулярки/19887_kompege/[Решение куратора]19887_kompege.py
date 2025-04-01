@@ -9,3 +9,11 @@ for i in range(len(s) - 1):
     else:
         cnt = 1
 print(ans)
+
+s = '123456789'
+for digit in '0123456789':
+    if digit in '13579':
+        s = s.replace(digit, '1')
+    else:
+        s = s.replace(digit, '2')
+
