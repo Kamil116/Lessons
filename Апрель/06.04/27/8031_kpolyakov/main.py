@@ -4,11 +4,12 @@ from turtle import *
 
 def dbscan(r, cur_star, all_stars, cluster):
     neighbours = []
-    for star in all_stars.copy():
-        if dist(cur_star, star) <= r:
-            neighbours.append(star)
-            cluster.append(star)
-            all_stars.remove(star)
+    for i in range(len(all_stars)):
+        if dist(cur_star, all_stars[i]) <= r:
+            neighbours.append(all_stars[i])
+            cluster.append(all_stars[i])
+            all_stars[i] = '*'
+    all_stars[:] = [star_new for star_new in all_stars if star_new != '*']
     for neighbour in neighbours:
         dbscan(r, neighbour, all_stars, cluster)
     return cluster
@@ -24,7 +25,8 @@ for line in f:
 
 clusters = []
 for star in stars:
-    clusters.append(dbscan(0.4, star, stars, [star]))
+    if star != '*':
+        clusters.append(dbscan(0.4, star, stars, [star]))
 print(len(clusters))
 
 m = 30
