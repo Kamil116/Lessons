@@ -1,9 +1,5 @@
 f = open('24.txt')
 s = f.readline().split('RSQ')
-# s = 'xxSxSxxxSxxxSx'
-# ['xx', 'x', 'xxx', 'xxx', 'x']
-# s[1] + s[2] - 3 штуки
-# s[1:3] s[i:i + 2]
 minim = 10000
 for i in range(len(s) - 129):
     if s[i + 129] == '':
