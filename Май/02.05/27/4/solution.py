@@ -1,7 +1,7 @@
 from math import dist
 from turtle import *
 
-f = open('27_1_A.txt')
+f = open('27_1_B.txt')
 clusters = [[] for _ in range(3)]
 for line in f.readlines():
     x, y = map(float, line.replace(',', '.').split())
