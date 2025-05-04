@@ -1,5 +1,4 @@
 from math import dist
-from turtle import *
 
 f = open('27_1_B.txt')
 clusters = [[] for _ in range(3)]
@@ -32,5 +31,5 @@ for cluster in clusters:
     if len(cluster) > maxim_points:
         maxim_points = len(cluster)
         maxim_points_antricentroid = anticentr
-print(int(minim_points_antricentroid[0] * 10_000), end=' ')
+print(int(minim_points_antricentroid[0] * 10_000))
 print(int(maxim_points_antricentroid[1] * 10_000))
