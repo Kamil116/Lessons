@@ -31,5 +31,5 @@ for i in range(len(scores) // 4, len(scores)):
         print(scores[i][0])
         break
 
-target = scores[999] # участник, занявший 1000 место
+target = scores[999]  # участник, занявший 1000 место
 print(len(list(filter(lambda x: x[1] == target[1] and x[2] == target[2] and x[3] == target[3], scores))))
